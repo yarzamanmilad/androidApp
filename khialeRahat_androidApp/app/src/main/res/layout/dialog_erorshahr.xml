@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog1"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            style="@style/matns"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="در این نسخه فقط برای شهر های تهران و کرج در دسترس می باشد" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="@dimen/toll"
+            android:layout_height="@dimen/arzz"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            style="@style/matns"
+            android:textStyle="bold"
+           android:textColor="@color/new5"
+            android:background="@drawable/but"
+            android:text="خب" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

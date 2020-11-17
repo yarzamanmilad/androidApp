@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog1"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/matns"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="آیا می خواهید خارج شوید؟"
+            android:textSize="16dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="24dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/out"
+            android:layout_width="50dp"
+
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+
+            android:textStyle="bold"
+            android:background="@drawable/but"
+            android:text="خروج" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/but"
+        android:text="بستن"
+        android:textStyle="bold" />
+</LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

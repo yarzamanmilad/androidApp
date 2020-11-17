@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:id="@+id/checked_textview_saat_kari"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:gravity="center_vertical"
+
+    android:paddingRight="18dp"
+
+    android:paddingLeft="16dp"
+
+
+
+    android:text="8-9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    />

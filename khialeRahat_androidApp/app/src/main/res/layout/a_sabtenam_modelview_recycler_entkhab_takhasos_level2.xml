@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView android:id="@+id/checkettxtview_entkhab_takhasoslevel2"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+
+    android:layout_margin="8dp"
+      android:layout_marginBottom="32dp"
+    android:paddingTop="10dp"
+    android:textSize="10sp"
+    android:text="منطقه یک"
+       android:checked="false"
+      android:elevation="8dp"
+    android:textColor="@color/sfid"
+    android:textAlignment="center"
+     android:background="@drawable/checkedtext_view_checked"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

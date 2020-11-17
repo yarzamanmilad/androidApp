@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bastan"
+            android:layout_width="@dimen/backiconsize"
+            android:layout_height="@dimen/backiconsize"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_highlight_off_black_24dp" />
+
+        <TextView
+            style="@style/matns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="شما ثبت نام نکردید!!!"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/matns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="لطفا ابتدا ثبت نام کرده سپس در خواست ثبت سفارش را انجام دهید" />
+
+        <Button
+            android:id="@+id/sbt"
+            android:layout_width="@dimen/widths"
+            android:layout_height="@dimen/heights"
+            android:layout_gravity="center"
+            style="@style/txtbotons"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/but"
+            android:text="ثبت نام/ورود" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

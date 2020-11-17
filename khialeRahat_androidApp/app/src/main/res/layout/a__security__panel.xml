@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/shap_with_strok_and_radious"
+                android:elevation="4dp"
+                android:translationZ="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <TextView
+                    android:id="@+id/txt_number_last_status"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shap_with_strok_and_radious_circle"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/start_work_secplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@drawable/shap_with_strok_and_radious"
+                    android:text="حضور در محل"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/end_work_secue_plan"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/end_work_secue_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@drawable/shap_with_strok_and_radious"
+                    android:text="خروج از محل"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/start_work_secplan"
+                    app:layout_constraintTop_toBottomOf="@id/txt_imgv2_secuer_panel" />
+
+                <TextView
+                    android:id="@+id/txt_mobile_secuer_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/shap_with_strok_and_radious"
+                    android:drawableLeft="@drawable/ic_call_sabz_24dp"
+
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:text="09187946870"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_address_secuer_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/shap_with_strok_and_radious"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:text="09187946870"
+                    android:textDirection="rtl"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_mobile_secuer_panel" />
+
+                <TextView
+                    android:id="@+id/txt_services_secuer_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/shap_with_strok_and_radious"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:text="09187946870"
+                    android:textDirection="rtl"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_address_secuer_panel" />
+
+                <ImageView
+                    android:id="@+id/txt_imgv1_secuer_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="35dp"
+
+
+                    android:background="@color/colorPrimary"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+
+                    android:text="09187946870"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_services_secuer_panel" />
+
+                <TextView
+                    android:id="@+id/txt_final_price_secuer_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="4dp"
+
+                    android:background="@drawable/shap_with_strok_and_radious_ghermez"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+
+                    android:text="50000 تومان"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_payment_status_secuer_panel"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_payment_type_secuer_panel"
+                    app:layout_constraintTop_toBottomOf="@id/txt_imgv1_secuer_panel" />
+
+                <TextView
+                    android:id="@+id/txt_payment_type_secuer_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+
+
+                    android:background="@drawable/shap_with_strok_and_radious_ghermez"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+
+                    android:text="آنلاین"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_payment_status_secuer_panel"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_final_price_secuer_panel"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_payment_status_secuer_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+
+
+                    android:background="@drawable/shap_with_strok_and_radious_ghermez"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+
+                    android:text="پرداخت نشده"
+                    android:textSize="12dp"
+                    android:translationZ="8dp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_final_price_secuer_panel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_final_price_secuer_panel" />
+
+                <ImageView
+                    android:id="@+id/txt_imgv2_secuer_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@color/colorPrimary"
+
+                    android:elevation="4dp"
+
+                    android:padding="8dp"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_payment_status_secuer_panel" />
+
+                <TextView
+                    android:id="@+id/txt_alarm_secuer_panel"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                      android:gravity="center"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/shap_with_strok_and_radious_circle_red"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:textColor="@color/red"
+                    android:text="تایید امنیتی"
+                    android:textSize="12dp"
+                    android:translationZ="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+

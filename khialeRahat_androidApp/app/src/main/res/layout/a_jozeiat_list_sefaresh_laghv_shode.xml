@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/shap_with_strok_and_radious"
+    android:elevation="4dp"
+    android:layoutDirection="ltr"
+
+    android:padding="8dp"
+    android:translationZ="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/mainconslay"
+    android:layout_marginLeft="8dp">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textview_shap"
+        android:elevation="4dp"
+        android:text="مشخصات سفارش"
+        android:textAlignment="center"
+        android:translationY="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/fix_txt_noeh_sefaresh"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:text="نوع خدمات:"
+        android:textAlignment="center"
+
+
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/txt_noeh_sefaresh_laghvshodeh"
+        android:layout_width="120dp"
+
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:text="زیبایی"
+        android:textAlignment="center"
+        android:translationZ="4dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fix_txt_noeh_sefaresh"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fix_txt_zamane_sefaresh"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:text="تاریخ و زمان:"
+
+        android:textAlignment="center"
+
+
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fix_txt_noeh_sefaresh" />
+
+    <TextView
+        android:id="@+id/txt_zamane_sefaresh_laghvshodeh"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="10dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:text="چهار شنبه 31 شهریور 15:40"
+        android:textAlignment="textStart"
+        android:textSize="11dp"
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fix_txt_zamane_sefaresh" />
+
+    <TextView
+        android:id="@+id/fix_txt_address_sefaresh"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:text="آدرس:"
+
+        android:textAlignment="center"
+
+
+        android:translationZ="4dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fix_txt_modat_zaman_laghv_sefaresh" />
+
+    <TextView
+        android:id="@+id/txt_address_sefaresh_laghvshode"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="10dp"
+        android:text="تهران اندیشه فاز 3 خ آ"
+        android:textAlignment="textStart"
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fix_txt_address_sefaresh" />
+
+
+    <TextView
+        android:id="@+id/fix_txt_modat_zaman_laghv_sefaresh"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+
+        android:paddingVertical="10dp"
+
+
+        android:text="زمان لغو سفارش:"
+        android:textAlignment="center"
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_zamane_sefaresh_laghvshodeh" />
+
+    <TextView
+        android:id="@+id/txt_zaman_laghve_sefaresh"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:text="5 ساعت"
+        android:textAlignment="center"
+        android:translationZ="4dp"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/fix_txt_modat_zaman_laghv_sefaresh"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_position_sefaresh_laghvshode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shap_with_strok_and_radious_circle"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:text="700"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_address_sefaresh_laghvshode" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+

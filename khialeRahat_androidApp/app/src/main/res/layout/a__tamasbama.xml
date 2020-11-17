@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/a_tamasbama_main_cinstlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <android.support.v4.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <android.support.constraint.ConstraintLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <android.support.constraint.ConstraintLayout
+                  android:id="@+id/constraintLayout8"
+                  android:layout_width="match_parent"
+                  android:layout_height="56dp"
+                  android:background="@color/colorPrimary"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="1.0"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/circleImageView"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginRight="8dp"
+                      android:layout_marginBottom="8dp"
+                      android:src="@drawable/khr"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginRight="8dp"
+                      android:text="خیال راحت"
+                      android:textColor="@color/sfid"
+                      android:textSize="18dp"
+                      app:layout_constraintEnd_toStartOf="@+id/circleImageView"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+                  <TextView
+                      android:id="@+id/textView17"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="8dp"
+                      android:text="نماینده انحصاری محصولات داهوا"
+                      android:textColor="@color/sfid"
+                      android:textSize="13dp"
+                      app:layout_constraintEnd_toStartOf="@+id/circleImageView"
+                      app:layout_constraintTop_toBottomOf="@+id/textView2" />
+              </android.support.constraint.ConstraintLayout>
+
+              <android.support.v7.widget.CardView
+                  android:id="@+id/cardView6"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginEnd="8dp"
+                  android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+                  <android.support.constraint.ConstraintLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+                      <TextView
+                          android:id="@+id/textView20"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="30dp"
+                          android:layout_marginEnd="8dp"
+                          android:text="درباره شرکت(خیال راحت)"
+                          android:textColor="@color/siahe"
+                          android:textSize="13dp"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toTopOf="parent" />
+
+                      <TextView
+                          android:id="@+id/textView19"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="40dp"
+                          android:layout_marginLeft="40dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginEnd="40dp"
+                          android:layout_marginRight="40dp"
+                          android:text="سلام،شرکت پی شن به عنوان اولین وارد کننده دوربین های مدار بسته برند داهوا و نماینده رسمی این شرکت فعالیت خود را ..."
+                          android:textAlignment="center"
+                          android:textColor="@color/siahe"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                      <ImageView
+                          android:id="@+id/imageView12"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:layout_marginTop="20dp"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginRight="8dp"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintHorizontal_bias="0.0"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/textView19"
+                          app:srcCompat="@color/khakestary" />
+
+                      <TextView
+                          android:id="@+id/txtbtn_call2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="25dp"
+                          android:layout_marginEnd="8dp"
+                          android:text="تلفن های تماس"
+                          android:textColor="@color/siahe"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+                      <ImageView
+                          android:id="@+id/imageView14"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginRight="8dp"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/txtbtn_call2"
+                          app:srcCompat="@color/khakestary" />
+
+
+                      <TextView
+                          android:id="@+id/txtbtncall1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="12dp"
+                          android:drawableLeft="@drawable/ic_call_sabz_24dp"
+                          android:text="+989187946870"
+
+                          app:layout_constraintEnd_toStartOf="@+id/txtbtncall2"
+                          app:layout_constraintHorizontal_bias="0.5"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+
+                      <TextView
+                          android:id="@+id/txtbtncall2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="13dp"
+                          android:drawableLeft="@drawable/ic_call_sabz_24dp"
+                          android:text="+982134546776"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintHorizontal_bias="0.5"
+                          app:layout_constraintStart_toEndOf="@+id/txtbtncall1"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                      <ImageView
+                          android:id="@+id/imageView18"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="16dp"
+                          android:layout_marginEnd="8dp"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/txtbtncall2"
+                          app:srcCompat="@color/khakestary" />
+
+                      <TextView
+                          android:id="@+id/textView24"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:layout_marginTop="25dp"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginRight="8dp"
+                          android:text="درشبکه های اجتماعی با ما باشید"
+                          android:textColor="@color/siahe"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+                      <ImageView
+                          android:id="@+id/imageView19"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginEnd="8dp"
+                          android:layout_marginRight="8dp"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/textView24"
+                          app:srcCompat="@color/khakestary" />
+
+                      <ImageView
+                          android:id="@+id/imageView20"
+                          android:layout_width="40dp"
+                          android:layout_height="40dp"
+                          android:layout_marginTop="25dp"
+                          app:layout_constraintEnd_toStartOf="@+id/imageView21"
+                          app:layout_constraintHorizontal_bias="0.5"
+                          app:layout_constraintHorizontal_chainStyle="packed"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView19"
+                          app:srcCompat="@drawable/instagramicon" />
+
+                      <ImageView
+                          android:id="@+id/imageView21"
+                          android:layout_width="40dp"
+                          android:layout_height="40dp"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="25dp"
+                          android:layout_marginBottom="50dp"
+                          app:layout_constraintBottom_toBottomOf="parent"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          app:layout_constraintHorizontal_bias="0.5"
+                          app:layout_constraintStart_toEndOf="@+id/imageView20"
+                          app:layout_constraintTop_toBottomOf="@+id/imageView19"
+                          app:srcCompat="@drawable/telegramicon" />
+
+
+                  </android.support.constraint.ConstraintLayout>
+              </android.support.v7.widget.CardView>
+
+              <ImageView
+                  android:id="@+id/btn_close_tamasbama"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginBottom="16dp"
+                  android:src="@drawable/ic_close"
+                  app:layout_constraintBottom_toTopOf="@+id/cardView6"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" />
+          </android.support.constraint.ConstraintLayout>
+
+      </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

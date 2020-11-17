@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.khialerahat.experts_khialerahat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".List_Sefareshha.A_secur_panel"></activity>
+        <activity android:name=".List_Sefareshha.A_NewOrder_Details" />
+
+        <service
+            android:name=".S_Security_Panel"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".List_Sefareshha.A_Jozeiat_Sefarsh_Darhal_Anjam" />
+        <activity android:name=".List_Sefareshha.A_Security_Panel" />
+
+        <receiver
+            android:name=".Package_Sabtenam_Motekhasesin.SmsReciver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".A_Tamasbama"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Package_Sabtenam_Motekhasesin.A_Greftan_Aks_Madarek_Motakhases"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Package_Sabtenam_Motekhasesin.A_Safhe_vrod_sabtenam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".A_Jozeiat_Sefaresh_Anjamshode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivityy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Package_Sabtenam_Motekhasesin.A_Sabtnam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PusheClass"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="co.ronash.pushe.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_884012851266" />
+    </application>
+
+</manifest>

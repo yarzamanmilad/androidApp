@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="botomsizeH">50dp</dimen>
+    <dimen name="txtsize">17dp</dimen>
+    <dimen name="txtmoshakhasatprosize">15dp</dimen>
+
+    <dimen name="TitleSize">20dp</dimen>
+
+    <dimen name="sizeicons">80dp</dimen>
+    <dimen name="backiconsize">40dp</dimen>
+    <dimen name="profileicon">130dp</dimen>
+
+
+    <dimen name="profileiconsw">60dp</dimen>
+    <dimen name="profileiconsh">90dp</dimen>
+
+
+
+    <dimen name="dialog1">400dp</dimen>
+
+    //small button
+    <dimen name="widths">150dp</dimen>
+    <dimen name="heights">50dp</dimen>
+
+    //large button
+    <dimen name="widthl">200dp</dimen>
+    <dimen name="heightl">50dp</dimen>
+
+
+    //smallest button
+    <dimen name="toll">55dp</dimen>
+    <dimen name="arzz">40dp</dimen>
+
+    //pardakht button
+    <dimen name="tol">70dp</dimen>
+    //آیکن های صفحه اصلی
+    <dimen name="logohome">80dp</dimen>
+    <dimen name="marginicons">32dp</dimen>
+
+
+    //سایز دکمه های دارای عکس در صفحه سفارشات
+    <dimen name="allimagebuttons">100dp</dimen>
+
+
+    <dimen name="imageradiobutton">55dp</dimen>
+
+    <dimen name="widthscrollchoise">150dp</dimen>
+    <dimen name="hightscrollchoise">190dp</dimen>
+
+
+</resources>

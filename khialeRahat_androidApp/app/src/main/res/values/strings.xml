@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">متخصصین </string>
+    <string name="title_home">لیست سفارش</string>
+    <string name="list_sefaresh">سفارش من</string>
+    <string name="akhbar">پیام ها</string>
+    <string name="profile">پروفایل</string>
+
+    <string name="Username">نام کاربری</string>
+    <string name="Password">پسورد</string>
+    <string name="RememberMe">مرا به خاطر بسپار</string>
+    <string name="Login">ورود</string>
+    <string name="Register">Register</string>
+    <string name="Logo">Logo</string>
+    <string name="FirstName">FirstName</string>
+    <string name="LastName">LastName</string>
+    <string name="Email">Email</string>
+    <string name="ConfirmEmailAddress">Confirm Email Address</string>
+    <string name="SignUp">ثبت نام</string>
+    <string name="registrationPage">Registration Page</string>
+    <string-array name="hrof_alefbayeh_farsi">
+        <item>ض</item>
+        <item>ص</item>
+        <item>ث</item>
+        <item>-</item>
+        <item>،</item>
+        <item>/</item>
+        <item>ث</item>
+        <item>ق</item>
+        <item>ف</item>
+        <item>غ</item>
+        <item>ع</item>
+        <item>ه</item>
+        <item>خ</item>
+        <item>ح</item>
+        <item>ج</item>
+        <item>چ</item>
+        <item>ش</item>
+        <item>س</item>
+        <item>ی</item>
+        <item>ب</item>
+        <item>ل</item>
+        <item>ا</item>
+        <item>ت</item>
+        <item>ن</item>
+        <item>م</item>
+        <item></item>
+        <item>ک</item>
+        <item>گ</item>
+        <item>پ</item>
+        <item>ظ</item>
+        <item>ط</item>
+        <item>ز</item>
+        <item>ر</item>
+        <item>ذ</item>
+        <item>د</item>
+        <item>ئ</item>
+        <item>و</item>
+        <item>آ</item>
+        <item> </item>
+        <item>،</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="khiale_rahat_security_chanel">khiale_rahat_security_chanel</string>
+
+</resources>

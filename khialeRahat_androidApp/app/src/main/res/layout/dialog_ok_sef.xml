@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/titlestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+
+            android:text="سفارش شما با موفقیت ثبت شد"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_check_circle_green_a700_48dp" />
+
+        <Button
+            android:id="@+id/sbt"
+            android:layout_width="@dimen/widths"
+            android:layout_height="@dimen/heights"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            style="@style/txtbotons"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/but"
+            android:text="صفحه اصلی" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.khialerahat.experts_khialerahat.Package_Sabtenam_Motekhasesin.A_Sabtnam">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/sabzroshan"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="4dp"
+                android:text="ثبت نام"
+                android:textAlignment="center"
+                android:textColor="@color/sfid"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/circleImageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.307" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/close_imgview_sabtenam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:elevation="4dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:translationZ="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/circleImageView2"
+                android:layout_width="40dp"
+
+
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="4dp"
+                android:src="@drawable/hkrsabz"
+                android:translationZ="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscroll_safehsabtenam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="200dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <requestFocus />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                      android:textAlignment="center"
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="مشخصات فردی"
+
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/family_inputlayout"
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft= "8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl"
+                        app:errorEnabled="true">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/family_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:hint="نام خانوادگی:"
+                            android:nextFocusForward="@id/name_edittext"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/name_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/name_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="نام: "
+
+                            android:inputType="text"
+                            android:layoutDirection="rtl"
+                            android:nextFocusForward="@id/codemeli_edittext"
+                            android:textAlignment="textStart"
+                            android:textDirection="rtl" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/codemeli_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        app:errorEnabled="true"
+                        android:layout_marginBottom="24dp"
+                        android:layoutDirection="rtl"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="10">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/codemeli_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="کد ملی:"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/shomarehamrah_edittext1"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:paddingLeft="8dp"
+
+                    android:paddingRight="8dp"
+                    android:text="شماره همراه و تلفن ثابت"
+                    android:textAlignment="center"
+                    android:textColor="@color/siah" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/shomarehamrah_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="40dp"
+                        android:elevation="8dp"
+                        android:layoutDirection="rtl"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="11"
+
+
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shomarehamrah_edittext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="شماره همراه: 09"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/shomaresabet_edittext"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/shomaresabet_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_marginBottom="40dp"
+                        android:layoutDirection="rtl"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="11">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shomaresabet_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="شماره ثابت: با پیش شماره"
+                            android:inputType="number"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:elevation="4dp"
+
+                        android:text="جنسیت:"
+                        android:translationZ="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView2"
+                        android:layout_width="140dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginStart="8dp"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/textview_shap"
+                        android:elevation="4dp"
+                        android:text="وضعیت تاهل و جنسیت"
+                        android:textAlignment="center"
+                        android:textColor="@color/siah"
+                        android:translationZ="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/jensiat_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+
+                        android:background="@drawable/switch_custom"
+                        android:checked="false"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:minHeight="40dp"
+                        android:padding="8dp"
+                        android:switchMinWidth="8dp"
+                        android:text="مرد"
+
+                        android:textColor="@color/sfid"
+                        android:textDirection="rtl"
+
+                        app:layout_constraintBaseline_toBaselineOf="@+id/appCompatTextView"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/vazeiatetahol_switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/switch_custom"
+                        android:checked="false"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:minHeight="40dp"
+                        android:padding="8dp"
+                        android:switchMinWidth="8dp"
+                        android:text="مجرد"
+                        android:textColor="@color/sfid"
+                        android:textDirection="rtl"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="90dp"
+                        android:text="وضعیت تاهل:"
+                        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+                        app:layout_constraintTop_toTopOf="@+id/appCompatTextView2" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewaddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/textview_shap"
+
+                    android:elevation="4dp"
+                    android:text="شهر و آدرس دقیق محل سکونت"
+                    android:textAlignment="center"
+                      android:textSize="12sp"
+                    android:textColor="@color/siah"
+                     />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/spiner_entkhab_ostan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="40dp"
+
+                    android:layout_marginRight="8dp" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/spiner_entkhab_shahrestan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edtAdressdagighskonat_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="108dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edtxt_addressdaghighskonat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:hint="آدرس دقیق محل سکونت"
+                        android:textDirection="rtl"
+                        android:nextFocusForward="@id/password_edittext1"
+                         />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardViewaddress">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="120dp"
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="اطلاعات امنیتی"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_inputlayout1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password_edittext1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:drawableStart="@drawable/lock_siah"
+                        android:drawableLeft="@drawable/lock_siah"
+                        android:drawablePadding="4dp"
+                        android:hint="رمز ورود"
+                        android:inputType="number"
+                        android:layoutDirection="rtl"
+                        android:nextFocusForward="@id/shomare_aber_bank_edittext"
+                        android:textDirection="rtl" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tekrar_password_inputlayout"
+                    style="@style/Widget.Design.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layoutDirection="rtl"
+
+
+                    android:textDirection="rtl"
+                    android:visibility="gone"
+                    app:errorEnabled="true"
+                    app:passwordToggleDrawable="@drawable/ic_search_black_24dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tekrar_password_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:drawableStart="@drawable/lock_siah"
+                        android:drawableLeft="@drawable/lock_siah"
+                        android:drawablePadding="4dp"
+                        android:hint="تکرار رمز ورود"
+                        android:nextFocusForward="@id/name_edittext"
+                        android:textDirection="rtl" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewetlaat_banki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewpassword">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="اطلاعات بانکی"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/shomare_aber_bank_inputlayout"
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="40dp"
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl"
+                        app:counterEnabled="true"
+                        app:errorEnabled="true">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shomare_aber_bank_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="شماره کارت"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/shomarehesa_edittext"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/shomarehesab_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layoutDirection="rtl"
+                        android:textDirection="rtl">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shomarehesa_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="شماره حساب: "
+
+                            android:inputType="number"
+                            android:layoutDirection="rtl"
+                            android:nextFocusForward="@id/shomare_shaba_edittext"
+                            android:textAlignment="textStart"
+                            android:textDirection="rtl" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/shomare_shaba_inputlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:layoutDirection="rtl"
+                        app:errorEnabled="true">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/shomare_shaba_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="شماره شبا"
+                            android:inputType="number"
+
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_marhalebaadi_safhesabtenam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/but"
+        android:visibility="invisible"
+        android:textColor="@color/sfid"
+        android:text="مرحله بعدی"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

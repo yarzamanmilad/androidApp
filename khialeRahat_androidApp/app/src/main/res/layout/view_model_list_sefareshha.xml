@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/cardview_viewmodel_list_sefarshha"
+        style="@style/cardstyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+        android:translationZ="8dp"
+        android:elevation="4dp"
+        android:background="@drawable/shap_with_strok_and_radious"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/onvan"
+                style="@style/titlestyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+
+                android:gravity="center"
+                android:text="کارواش"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="8dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/gheymat_list_sefareshha"
+                    style="@style/matns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:gravity="center"
+                    android:text="2000000 تومان" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zamansef"
+                style="@style/smalltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:gravity="right"
+                android:text="سفارش برای دوشنبه 17 شهریور   12:30"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/noesef"
+                style="@style/matns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="نوع خودرو سنگین"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/onvan" />
+
+            <TextView
+                android:id="@+id/number"
+
+                android:layout_width="0.000001dp"
+                android:layout_height="0.000001dp"
+                android:layout_marginEnd="8dp"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/onvan"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:id="@+id/nemayesh_jozeiat"
+                style="@style/smalltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="نمایش جزئیات"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBaseline_toBaselineOf="@+id/zamansef"
+                app:layout_constraintStart_toStartOf="@+id/img"
+                android:layout_marginLeft="8dp" />
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/allimagebuttons"
+                android:layout_height="@dimen/allimagebuttons"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/nemayesh_jozeiat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="4dp" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#61E8E1</color>
+    <color name="colorPrimaryDark">#24B4AD</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="red">#F73434</color>
+    <color name="green">#4A9C02</color>
+    <color name="blue">#0D61F7</color>
+    <color name="yellow">#FAD243</color>
+
+    <color name="new1">#E3C562</color>
+    <color name="new2">#E2CF91</color>
+    <color name="new3">#EAF2E3</color>
+    <color name="new4">#61E8E1</color>
+    <color name="new5">#F25757</color>
+    <color name="gherme">#F04D4D</color>
+    <color name="abi">#4161D3</color>
+    <color name="siah">#0C0C0C</color>
+    <color name="sfid">#FCFAFA</color>
+    <color name="sabz">#2AAA08</color>
+    <color name="banafsh">#AC62D5</color>
+    <color name="sabzroshan">#85DDD0</color>
+    <color name="sabzroshan_barayeh_btn_off">#4085DDD0</color>
+
+
+
+    <color name="khakestary">#C4BABA</color>
+    <color name="btn_blue">#4A9BEB</color>
+
+    <color name="transparent">#66000000</color>
+    <color name="desable_btn_abi">#D0EBF7</color>
+
+    <color name="abikamrang">#40B8EE</color>
+    <color name="siahe">#000</color>
+    <color name="background_safhe_filter_masaleh">#F0EEEE</color>
+    <color name="background_aksgrftan_crdview">#EBF7F2F2</color>
+    <color name="background_aksgrftan_txt">#EBFFF2F2</color>
+    <color name="background_aksgrftan_constriantlayout">#00FFFFFF</color>
+</resources>

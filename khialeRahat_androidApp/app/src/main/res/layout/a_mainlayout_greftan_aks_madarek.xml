@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_greftan_aks_madarek"
+      android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/sabzroshan"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"
+            android:text="ثبت نام"
+            android:textAlignment="center"
+            android:textColor="@color/sfid"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/circleImageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.307" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/close_imgview_sabtenam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/circleImageView2"
+            android:layout_width="40dp"
+
+
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"
+            android:src="@drawable/hkrsabz"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscroll_greftanaks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout_in_nestedscroll"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:id="@+id/payane_khedmat"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="32dp"
+
+                        android:background="@drawable/imagview_shap"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toStartOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/textView4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/textview_shap_ghermez"
+                        android:elevation="4dp"
+                        android:text="پایان خدمت"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/payane_khedmat"
+                        app:layout_constraintStart_toStartOf="@+id/payane_khedmat"
+                        app:layout_constraintTop_toBottomOf="@+id/payane_khedmat" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/textView5"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/textview_shap_ghermez"
+                        android:elevation="4dp"
+                        android:text="گواهی فنی و حرفه ای"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/gavahi_fani"
+                        app:layout_constraintStart_toStartOf="@+id/gavahi_fani"
+                        app:layout_constraintTop_toBottomOf="@+id/gavahi_fani" />
+
+                    <ImageView
+                        android:id="@+id/gavahi_fani"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="32dp"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toStartOf="@+id/safhe_aval_shenasname"
+                        app:layout_constraintStart_toEndOf="@+id/aks_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/txtview_poshtcartmeli"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/textView6"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/textview_shap_ghermez"
+                        android:elevation="4dp"
+                        android:text="عکس پروفایل"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/aks_profile"
+                        app:layout_constraintStart_toStartOf="@+id/aks_profile"
+                        app:layout_constraintTop_toBottomOf="@+id/aks_profile" />
+
+                    <ImageView
+                        android:id="@+id/aks_profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/textview_shap_ghermez"
+                        android:elevation="4dp"
+                        android:text="شناسنامه"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/safhe_aval_shenasname"
+                        app:layout_constraintStart_toStartOf="@+id/safhe_aval_shenasname"
+                        app:layout_constraintTop_toBottomOf="@+id/safhe_aval_shenasname" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtview_poshtcartmeli"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/textview_shap_ghermez"
+                        android:elevation="4dp"
+                        android:text="پشت کارت ملی"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintStart_toStartOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/aks_posht_kart_meli" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+
+                        android:background="@drawable/textview_shap"
+                        android:elevation="4dp"
+                        android:text="تصویر مدارک"
+                        android:textAlignment="center"
+                        android:textColor="@color/siah"
+                        android:translationZ="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/aks_kart_meli"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/imagview_shap"
+                        android:clickable="true"
+                        app:layout_constraintEnd_toStartOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <ImageView
+                        android:id="@+id/aks_posht_kart_meli"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="24dp"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toStartOf="@+id/safhe_aval_shenasname"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/aks_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <ImageView
+                        android:id="@+id/safhe_aval_shenasname"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="false"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/aks_posht_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3"
+                        app:srcCompat="@drawable/ezafehkardanaks" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/textView1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/textview_shap_khakestari"
+                        android:elevation="4dp"
+                        android:text="کارت ملی"
+                        android:textAlignment="center"
+                        android:textColor="@color/sfid"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/aks_kart_meli"
+                        app:layout_constraintStart_toStartOf="@+id/aks_kart_meli"
+                        app:layout_constraintTop_toBottomOf="@+id/aks_kart_meli" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_saat_kari"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="8dp"
+                android:paddingBottom="32dp"
+
+                app:cardCornerRadius="8dp"
+                 android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextV_saatkari"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="ساعات کاری"
+                    android:textAlignment="center"
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    
+                    >
+
+                   
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_shanbeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:checked="false"
+
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="4dp"
+                            android:paddingRight="4dp"
+                            android:text="شنبه"
+                            android:textSize="18dp"
+                            app:layout_constraintEnd_toEndOf="@+id/conslay_shanbeh"
+                            app:layout_constraintTop_toTopOf="@+id/conslay_shanbeh" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_item_text_size="14dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/conslay_shanbeh"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_shanbeh"
+                            app:layout_constraintTop_toTopOf="@+id/conslay_shanbeh"
+                            app:scroll_item_align="center"
+                            app:scroll_indicator_size="14dp"
+                            app:scroll_selected_item_text_color="@color/siah"/>
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/conslay_shanbeh"
+                            app:layout_constraintTop_toTopOf="@+id/conslay_shanbeh"
+                             />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            android:inputType="time"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+                            app:layout_constraintEnd_toStartOf="@+id/textView8" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            android:inputType="time"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+                            app:layout_constraintEnd_toStartOf="@+id/textView11" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_yek_shanbeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_yek_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+
+                            android:checked="false"
+                            android:drawablePadding="12dp"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="4dp"
+                            android:paddingRight="4dp"
+                            android:text="یک شنبه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_yek_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_yek_shanbeh"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_yek_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+                        <TextView
+                            android:id="@+id/textView81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_yek_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_yek_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView81"
+                            app:layout_constraintEnd_toStartOf="@+id/textView81" />
+
+                        <TextView
+                            android:id="@+id/textView110"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_yek_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView110"
+                            app:layout_constraintEnd_toStartOf="@+id/textView110" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_do_shanbeh"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_yek_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_do_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:checked="false"
+                            android:drawablePadding="16dp"
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:text="دو شنبه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_do_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_do_shanbeh"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_do_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+                        <TextView
+                            android:id="@+id/textVie8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_do_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_do_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVie8"
+                            app:layout_constraintEnd_toStartOf="@+id/textVie8" />
+
+                        <TextView
+                            android:id="@+id/textVie11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textVie8" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_do_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVie11"
+                            app:layout_constraintEnd_toStartOf="@+id/textVie11" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_seh_shanbeh"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_do_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_seh_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:checked="false"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:text="سه شنبه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_seh_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_seh_shanbeh"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_seh_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+
+                        <TextView
+                            android:id="@+id/textView82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_seh_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_seh_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView82"
+                            app:layout_constraintEnd_toStartOf="@+id/textView82" />
+
+                        <TextView
+                            android:id="@+id/textView1100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_seh_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView1100"
+                            app:layout_constraintEnd_toStartOf="@+id/textView1100" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_chehar_shanbeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_seh_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_chehar_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+                            android:checked="false"
+
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:text="چهار شنبه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_chehar_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_chehar_shanbeh"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_chehar_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+                        <TextView
+                            android:id="@+id/textVi8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_chehar_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_chehar_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVi8"
+                            app:layout_constraintEnd_toStartOf="@+id/textVi8" />
+
+                        <TextView
+                            android:id="@+id/textVi11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textVi8" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_chehar_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVi11"
+                            app:layout_constraintEnd_toStartOf="@+id/textVi11" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_panj_shanbeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_chehar_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_panj_shanbeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:checked="false"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:text="پنج شنبه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_panj_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_panj_shanbeh"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_panj_shanbeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+                        <TextView
+                            android:id="@+id/textVi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_panj_shanbeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_panj_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVi"
+                            app:layout_constraintEnd_toStartOf="@+id/textVi" />
+
+                        <TextView
+                            android:id="@+id/textVie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textVi" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_panj_shanbeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textVie"
+                            app:layout_constraintEnd_toStartOf="@+id/textVie" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/conslay_jomeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shap_with_strok_and_radious"
+                        android:elevation="4dp"
+                        android:translationY="4dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conslay_panj_shanbeh">
+
+                        <android.support.v7.widget.AppCompatCheckedTextView
+                            android:id="@+id/chtxt_jomeh"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="16dp"
+
+                            android:checked="false"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:text=" جمعه"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_shroeh_jomeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/scroolchoice_payan_jomeh"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <com.webianks.library.scroll_choice.ScrollChoice
+                            android:id="@+id/scroolchoice_payan_jomeh"
+                            android:layout_width="70dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:scroll_indicator_size="16dp"
+                            app:scroll_item_align="center"
+                            app:scroll_item_text_size="16dp"
+                            app:scroll_selected_item_text_color="@color/siah" />
+
+                        <TextView
+                            android:id="@+id/textV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="از ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chtxt_jomeh" />
+
+                        <TextView
+                            android:id="@+id/txt_shroeh_jomeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textV"
+                            app:layout_constraintEnd_toStartOf="@+id/textV" />
+
+                        <TextView
+                            android:id="@+id/textV5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="تا ساعت"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textV" />
+
+                        <TextView
+                            android:id="@+id/txt_payan_jomeh"
+                            android:layout_width="50dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="-:-"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textV5"
+                            app:layout_constraintEnd_toStartOf="@+id/textV5" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/conslay_jomeh"></android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/crdview_recyclerview_manategh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="8dp"
+
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardview_saat_kari">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextV"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="مناطق خدمت دهی"
+                    android:textAlignment="center"
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/sp_entkhab_ostan"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="24dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/sp_entkhab_shahrestan"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:visibility="invisible"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/sp_entkhab_ostan"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_entkhab_manategh"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/sp_entkhab_ostan"
+                        ></android.support.v7.widget.RecyclerView>
+                </android.support.constraint.ConstraintLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_sabtnammotahkassin_maillayout_greftanaks_listtakhasos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+
+                android:elevation="8dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdview_recyclerview_manategh">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextV_motakhasesin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="تخصص های خود را وارد کنید"
+                    android:textAlignment="center"
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_entkhab_takhasosha"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="40dp"></android.support.v7.widget.RecyclerView>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_sabtnammotahkassin_maillayout_greftanaks_listtakhasos_level2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="8dp"
+                android:paddingBottom="16dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.552"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardview_sabtnammotahkassin_maillayout_greftanaks_listtakhasos">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextV_motakhasesin_level2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:background="@drawable/textview_shap"
+                    android:elevation="4dp"
+                    android:text="تخصص های خود را وارد کنید"
+                    android:textAlignment="center"
+                    android:textColor="@color/siah"
+                    android:translationZ="8dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_entkhab_takhasosha_level2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="40dp"></android.support.v7.widget.RecyclerView>
+
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/crd_btn_ersalaks_etsalat"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:elevation="8dp"
+        android:translationZ="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/but"
+
+
+        android:text="ارسال"
+
+        android:textSize="17dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_greftanaks_etsalat"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/background_aksgrftan_crdview"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/crdbtn_ensraf_grftanaks_etsalat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_aksgrftan_crdview">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@color/background_aksgrftan_crdview"
+                    android:paddingTop="5dp"
+                    android:text="ارسال عکس"
+                    android:textAlignment="center"
+                    android:textSize="11dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/khakestary"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_bazkardandorbin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_bazkardandorbin"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@color/background_aksgrftan_crdview"
+                    android:text="باز کردن دوربین"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/khakestary"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_entkhabaksasgalery"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_entkhabaksasgalery"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@color/background_aksgrftan_crdview"
+                    android:text="انتخاب از گالری عکس"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/crdbtn_ensraf_grftanaks_etsalat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="60dp"
+
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="انصراف"
+                android:textAlignment="center"
+                android:textColor="@color/gherme" />
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_in_lay"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        app:SpinKit_Color="@color/new5"
+        app:SpinKit_Style="FadingCircle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

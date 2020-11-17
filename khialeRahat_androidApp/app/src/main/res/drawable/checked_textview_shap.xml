@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true">
+        <shape>
+
+            <stroke android:color="@color/sfid" android:width="0.5dp"/>
+            <solid android:color="@color/sfid"/>
+        </shape>
+
+    </item>
+    <item
+        android:state_pressed="true">
+        <shape>
+
+            <solid android:color="@color/gherme"/>
+            <stroke android:color="@color/new3" android:width="0.5dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:state_checkable="true">
+        <shape>
+
+            <stroke android:color="@color/khakestary" android:width="0.5dp"/>
+            <solid android:color="@color/khakestary"/>
+        </shape>
+
+    </item>
+
+    <item>
+        <shape>
+
+            <stroke android:color="@color/colorPrimary" android:width="0.5dp"/>
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+
+    </item>
+</selector>
